@@ -12,3 +12,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+img {
+  max-width: 40vw;
+}
+</style>

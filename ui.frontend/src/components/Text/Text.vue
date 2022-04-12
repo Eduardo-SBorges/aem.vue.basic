@@ -1,16 +1,14 @@
 <template>
-  <div>
+  <div class="className">
+    <div :class="className"></div>
+
     <div
       v-if="richText"
       :id="modelId"
       data-rte-editelement
       v-html="getRichTextContent()"
     ></div>
-    <div v-else
-         :id="modelId"
-         data-rte-editelement
-         v-html="text">
-    </div>
+    <div v-else :id="modelId" data-rte-editelement v-html="text"></div>
   </div>
 </template>
 
@@ -29,6 +27,9 @@ export default {
     },
     text: {
       type: String
+    },
+    className: {
+      type: String
     }
   },
   computed: {
@@ -42,7 +43,12 @@ export default {
     }
   }
 }
-
 </script>
-<style scoped lang="scss">
+<style lang="scss">
+.custom-text-1 {
+  color: green;
+}
+.custom-text-2 {
+  color: red;
+}
 </style>
