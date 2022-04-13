@@ -1,7 +1,5 @@
 <template>
-  <div class="className">
-    <div :class="className"></div>
-
+  <div :class="className">
     <div
       v-if="richText"
       :id="modelId"
@@ -13,36 +11,36 @@
 </template>
 
 <script>
-import DOMPurify from 'dompurify'
-import extractModelId from '../../utils/extract-model-id'
+import DOMPurify from "dompurify";
+import extractModelId from "../../utils/extract-model-id";
 
 export default {
-  name: 'Text',
+  name: "Text",
   props: {
     cqPath: {
-      type: String
+      type: String,
     },
     richText: {
-      type: Boolean
+      type: Boolean,
     },
     text: {
-      type: String
+      type: String,
     },
     className: {
-      type: String
-    }
+      type: String,
+    },
   },
   computed: {
-    modelId () {
-      return extractModelId(this.cqPath)
-    }
+    modelId() {
+      return extractModelId(this.cqPath);
+    },
   },
   methods: {
-    getRichTextContent () {
-      return DOMPurify.sanitize(this.text)
-    }
-  }
-}
+    getRichTextContent() {
+      return DOMPurify.sanitize(this.text);
+    },
+  },
+};
 </script>
 <style lang="scss">
 .custom-text-1 {
