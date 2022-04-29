@@ -4,6 +4,12 @@ import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
 import Header from './components/Header/Header'
 import Image from './components/Image/Image'
+import NotFoundButton from './components/404Button/404Button'
+import NotFoundFooter from './components/404Footer/404Footer'
+import NotFoundHeader from './components/404Header/404Header'
+import NotFoundImage from './components/404Image/404Image'
+import NotFoundText from './components/404Text/404Text'
+import NotFoundTitle from './components/404Title/404Title'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -61,3 +67,11 @@ MapTo('vue/components/container')(
     }
   }
 )
+
+// 404 Page Components Mapping
+MapTo('vue/components/404-button')(NotFoundButton)
+MapTo('vue/components/404-footer')(NotFoundFooter)
+MapTo('vue/components/404-header')(NotFoundHeader)
+MapTo('vue/components/404-image')(NotFoundImage)
+MapTo('vue/components/404-text')(NotFoundText)
+MapTo('vue/components/404-title')(NotFoundTitle)
