@@ -1,7 +1,7 @@
 <template>
-  <h6>
+  <footer>
     created by <a :href="userurl">{{ username }}</a> - devChallenges.io
-  </h6>
+  </footer>
 </template>
 <script>
 export default {
@@ -12,13 +12,14 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-h6 {
+footer {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 17px;
   text-align: center;
   color: #bdbdbd;
+  margin: 24px 0;
 
   a {
     font-weight: 700;

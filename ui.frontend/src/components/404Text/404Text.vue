@@ -1,5 +1,5 @@
 <template>
-  <h4>{{ text }}</h4>
+  <p>{{ text }}</p>
 </template>
 <script>
 export default {
@@ -9,7 +9,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-h4 {
+p {
   font-family: 'Space Mono', monospace;
   font-size: 24px;
   font-weight: 400;

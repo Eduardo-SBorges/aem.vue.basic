@@ -10,6 +10,7 @@ import NotFoundHeader from './components/404Header/404Header'
 import NotFoundImage from './components/404Image/404Image'
 import NotFoundText from './components/404Text/404Text'
 import NotFoundTitle from './components/404Title/404Title'
+import NotFoundContent from './components/404Content/404Content'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -75,3 +76,4 @@ MapTo('vue/components/404-header')(NotFoundHeader)
 MapTo('vue/components/404-image')(NotFoundImage)
 MapTo('vue/components/404-text')(NotFoundText)
 MapTo('vue/components/404-title')(NotFoundTitle)
+MapTo('vue/components/404-content')(NotFoundContent)

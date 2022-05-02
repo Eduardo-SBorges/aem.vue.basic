@@ -16,7 +16,7 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/fileupload"
                         fieldLabel="Image"
                         required="true"
-                        name="./imagePath" />
+                        name="./path" />
                 </items>
             </column>
         </items>

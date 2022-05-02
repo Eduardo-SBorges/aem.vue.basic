@@ -24,6 +24,7 @@ button.btn {
   border: none;
   cursor: pointer;
   padding: 24px 43px;
+  width: 216px;
   color: #fff;
   background-color: #333;
   transition: background-color 0.2s ease-in, box-shadow 0.1s ease-in-out;

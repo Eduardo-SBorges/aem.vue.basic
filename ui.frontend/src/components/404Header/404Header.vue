@@ -1,5 +1,5 @@
 <template>
-  <h2>{{ text }}</h2>
+  <header>{{ text }}</header>
 </template>
 <script>
 export default {
@@ -9,9 +9,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap');
-
-h2 {
+header {
   font-family: 'Inconsolata', monospace;
   font-size: 24px;
   font-weight: 700;
@@ -19,5 +17,6 @@ h2 {
   letter-spacing: -0.08em;
   text-transform: uppercase;
   color: #333;
+  margin: 40px 77px;
 }
 </style>
