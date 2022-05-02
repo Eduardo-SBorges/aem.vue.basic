@@ -14,7 +14,7 @@ export default {
 <style lang="scss" scoped>
 footer {
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 17px;
   text-align: center;

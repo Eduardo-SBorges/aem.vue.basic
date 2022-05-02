@@ -12,18 +12,12 @@
             <column jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <header jcr:primaryType="nt:unstructured"
+                    <path jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Header Text"
-                        value="edit me!"
-                        required="true"
-                        name="./header" />
-                    <image jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Image Path"
+                        fieldLabel="Path to the image"
                         value="#"
                         required="true"
-                        name="./imageUrl" />
+                        name="./path" />
                     <title jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="Page Title"
@@ -42,17 +36,6 @@
                         value="edit me!"
                         required="true"
                         name="./button" />
-                    <footer jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Creator Name"
-                        value="username"
-                        required="true"
-                        name="./userName" />
-                    <footer2 jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Creator URL"
-                        value="https://example.com"
-                        name="./userUrl" />
                 </items>
             </column>
         </items>
