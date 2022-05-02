@@ -6,7 +6,7 @@
     <section id="text">
       <not-found-title :title="title" />
       <not-found-text :text="text" />
-      <not-found-button :text="button" />
+      <not-found-button :text="button" :url="buttonUrl" />
     </section>
   </div>
 </template>
@@ -25,7 +25,8 @@ export default {
     path: { type: String, default: '' },
     title: { type: String, default: '' },
     text: { type: String, default: '' },
-    button: { type: String, default: '' }
+    button: { type: String, default: '' },
+    buttonUrl: { type: String, default: '' }
   }
 }
 </script>

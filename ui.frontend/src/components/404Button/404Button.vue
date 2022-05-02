@@ -6,11 +6,12 @@
 <script>
 export default {
   props: {
-    text: { type: String, default: 'Edit me!' }
+    text: { type: String, default: 'Edit me!' },
+    url: { type: String, default: '#' }
   },
   methods: {
     goToHome () {
-      console.info('TODO: Redirect to home')
+      this.$router.push(this.url)
     }
   }
 }
