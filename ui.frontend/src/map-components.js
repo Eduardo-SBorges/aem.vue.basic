@@ -2,6 +2,7 @@ import CustomClasses from './components/CustomClasses/CustomClasses'
 import Text from './components/Text/Text'
 import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
+import Select from './components/Select/Select'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Image from './components/Image/Image'
@@ -27,6 +28,9 @@ const EditConfig = {
 **********************************************************************/
 
 MapTo('vue/components/customclasses')(CustomClasses, EditConfig)
+
+// Select Component Mapping
+MapTo('vue/components/select')(Select, EditConfig)
 
 // Checkbox Component Mapping
 MapTo('vue/components/checkbox')(CheckBox, EditConfig)
