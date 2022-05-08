@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>{{ text }}</p>
+    <p v-html="text"></p>
   </footer>
 </template>
 
