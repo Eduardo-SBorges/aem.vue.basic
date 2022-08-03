@@ -39,16 +39,16 @@
       "command": "cd ui.apps && mvn clean install -PautoInstallPackage",
       "problemMatcher": []
     },
-    /* ---------- Maven ui.frontend ---------- */
+    /* ---------- Maven core & ui.apps ---------- */
     {
-      "label": "Build ui.frontend",
+      "label": "Build core & ui.apps",
       "type": "shell",
       "group": "build",
       "presentation": {
         "panel": "shared",
         "clear": true
       },
-      "command": "cd ui.frontend && mvn clean install -PautoInstallPackage",
+      "command": "cd core && mvn clean install -PautoInstallBundle; cd ../ui.apps && mvn clean install -PautoInstallPackage",
       "problemMatcher": []
     },
     /* ---------- Maven ui.frontend && ui.apps ---------- */
@@ -101,7 +101,7 @@
     },
     /* ---------- Devserver ---------- */
     {
-      "label": "Run Devserver",
+      "label": "Run Dev Server",
       "type": "shell",
       "presentation": {
         "panel": "new",
@@ -109,18 +109,6 @@
         "clear": true
       },
       "command": "cd ui.frontend && npm start",
-      "problemMatcher": []
-    },
-    /* ---------- aemsync ---------- */
-    {
-      "label": "Run aemsync",
-      "type": "shell",
-      "presentation": {
-        "panel": "new",
-        "reveal": "silent",
-        "clear": true
-      },
-      "command": "cd ui.frontend && npm run sync",
       "problemMatcher": []
     }
   ]
