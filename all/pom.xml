@@ -242,5 +242,19 @@
             <artifactId>core.wcm.components.config</artifactId>
             <type>zip</type>
         </dependency>
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-ui.content</artifactId>
+            <version>5.2.0</version>
+            <type>zip</type>
+            <classifier>min</classifier>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.acs</groupId>
+            <artifactId>acs-aem-commons-ui.apps</artifactId>
+            <version>5.2.0</version>
+            <type>zip</type>
+            <classifier>min</classifier>
+        </dependency>
     </dependencies>
 </project>
