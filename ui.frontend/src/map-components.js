@@ -7,6 +7,7 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Image from './components/Image/Image'
 import Main from './components/Main/Main'
+import Multifield from './components/Multifield/Multifield'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -43,6 +44,9 @@ MapTo('vue/components/main')(Main, EditConfig)
 
 // Footer Component Mapping
 MapTo('vue/components/footer')(Footer, EditConfig)
+
+// Multifield Component Mapping
+MapTo('vue/components/multifield')(Multifield, EditConfig)
 
 // Image Component Mapping
 MapTo('vue/components/image')(Image, {
